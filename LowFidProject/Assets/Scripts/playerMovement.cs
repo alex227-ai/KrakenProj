@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    [SerializeField] GameObject Player;
+    [SerializeField] GameObject player;
     //[SerializeField] float xMov = 0f;
     [SerializeField] float speedMovement = 0f;
     [SerializeField] float gravity = 0f;
@@ -14,7 +14,15 @@ public class playerMovement : MonoBehaviour
     Rigidbody rb;
     private float directionY;
 
-    //private Vector3 inputVector;
+
+    // Ground check
+
+    [SerializeField] Transform groundCheck;
+    [SerializeField] LayerMask GroundLayer;
+
+    // ground check
+
+    //Vector3 directions;
 
 
     // Start is called before the first frame update
@@ -26,14 +34,71 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetMoving();
+        //GetMoving();
+       // GetGrounded();
+      TestMoving();
     }
+
+    void TestMoving()
+    {
+        float xMov = Input.GetAxis("Vertical");
+        float zMov = Input.GetAxis("Horizontal");
+        Vector3 directions = new Vector3(xMov * speedMovement * Time.deltaTime, 0, zMov * speedMovement * Time.deltaTime);
+
+        // JUMP 
+        if (Input.GetButtonDown("Jump"))
+        {
+            directionY = jumpSp;
+        }
+
+        print(gravity + " " + directionY);
+
+        directionY -= gravity * Time.deltaTime;
+        directions.y = directionY;
+
+        // JUMP
+
+        rb.velocity = directions;
+
+        bool Grounded()
+        {
+            return Physics.CheckSphere(groundCheck.position, 0.1f, GroundLayer);
+        }
+
+        // Time.deltaTime is the problem?
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     void GetMoving()
     {
-        Vector3 directions = new Vector3(Input.GetAxis("Vertical") * Time.deltaTime * speedMovement, 0, Input.GetAxis("Horizontal") * Time.deltaTime * speedMovement);
+        // Movement code
+        float xMov = Input.GetAxis("Vertical") * speedMovement * Time.deltaTime;
+        float zMov = Input.GetAxis("Horizontal") * speedMovement * Time.deltaTime;
+       Vector3 directions = new Vector3(xMov, 0, zMov);
+       // directions = directions * speedMovement * Time.deltaTime;
 
-        // Jump code
+      
+        //transform.Translate(xMov, 0, zMov);
+
+        directions = new Vector3(xMov, 0, zMov);
+        rb.velocity = directions;
+
+
+
         if (Input.GetButtonDown("Jump"))
         {
             directionY = jumpSp;
@@ -47,6 +112,8 @@ public class playerMovement : MonoBehaviour
 
         // jump code 
         rb.velocity = directions;
+
+
     }
 
 }

@@ -1,0 +1,2 @@
+C:\Users\Alex\Desktop\University\Term 2\Games System\KrakenProj\KrakenProj\LowFidProject\obj\Debug\NavMeshComponentsEditor.csproj.AssemblyReference.cache
+C:\Users\Alex\Desktop\University\Term 2\Games System\KrakenProj\KrakenProj\LowFidProject\obj\Debug\NavMeshComponentsEditor.csproj.CoreCompileInputs.cache
