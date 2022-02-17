@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask Ground;
     [SerializeField] Transform groundCheck;
 
+    float speedTime;
+
+    public bool isSpeeding;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         GetMoving();
+
+        if (isSpeeding)
+        {
+            VelocityExtra();
+        }
     }
 
     void GetMoving()
@@ -37,5 +46,24 @@ public class PlayerController : MonoBehaviour
         {
             return Physics.CheckSphere(groundCheck.position, 0.1f, Ground);
         }
+    }
+
+    void VelocityExtra()
+    {
+        // float spMov = pc.speedMovement;
+        speedMovement = 50f;
+
+        float slowDown = 5f; // 5 fps
+        speedTime += Time.deltaTime;
+
+        if (speedTime > slowDown)
+        {
+            print("slow down");
+            speedTime = 0;
+            isSpeeding = false;
+            speedMovement = 10f; // insert speedmovement chosen in the inspector
+        }
+
+         print(speedTime);
     }
 }

@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Speeder : MonoBehaviour
 {
-  //  [SerializeField] int speederCount;
+    //  [SerializeField] int speederCount;
 
     GameObject personCollecting;
     Inventory pi;
     PlayerController pc;
     Rigidbody rb;
+
+    float speedTime;
+
+    bool isSpeeding;
 
     private void Start()
     {
@@ -17,6 +21,13 @@ public class Speeder : MonoBehaviour
         personCollecting = pc.gameObject;
         rb = personCollecting.GetComponent<Rigidbody>();
 
+    }
+
+    private void Update()
+    {
+        /*if(isSpeeding)
+        {
+            VelocityExtra();*/
     }
 
 
@@ -27,9 +38,11 @@ public class Speeder : MonoBehaviour
         if (personCollecting.tag == "Player")
         {
             pi = personCollecting.GetComponent<Inventory>();
+            pc.isSpeeding = true;
             SpeederCount();
-            VelocityExtra();
-          //  pc.speedMovement = 1f; // Add 1 unit to speedMovement
+            //VelocityExtra();
+
+            //  pc.speedMovement = 1f; // Add 1 unit to speedMovement
 
             /*
               Code for speedMovement +1 for a limited amount of time
@@ -38,23 +51,46 @@ public class Speeder : MonoBehaviour
         }
     }
 
-  
+
 
     void SpeederCount()
     {
         print("You got the Speeder");
         pi.SetObject(true);
-        Destroy(gameObject);
         pi.MySpeeders++; // Add to My Speeder count
+        Destroy(gameObject);
     }
 
-    void VelocityExtra()
+   /* void VelocityExtra()
     {
-       // float spMov = pc.speedMovement;
-       // rb.AddForce(transform.right * 50f);
-        rb.AddForce(transform.forward * 50f);
+        // float spMov = pc.speedMovement;
+         pc.speedMovement = 50f;
 
-    }
+        float slowDown = 5f;
+        speedTime += Time.deltaTime;
+
+        if (speedTime > slowDown)
+        {
+            print("slow down");
+            speedTime = 0;
+            isSpeeding = false;
+
+
+        }
+
+       // print(speedTime);
+    }*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
