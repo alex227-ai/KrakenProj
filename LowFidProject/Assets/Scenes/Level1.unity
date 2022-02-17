@@ -633,6 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasObject: 0
+  MySpeeders: 0
 --- !u!1 &599036702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,7 +1173,7 @@ MonoBehaviour:
   magazineSize: 100
   bulletsPerTap: 1
   allowButtonHold: 1
-  fpsCam: {fileID: 963194227}
+  MainCamera: {fileID: 963194227}
   attackPoint: {fileID: 790325167}
   muzzleFlash: {fileID: 1833316520}
   ammutionDisplay: {fileID: 2028811391}
@@ -1434,27 +1435,13 @@ GameObject:
   - component: {fileID: 1583447745}
   - component: {fileID: 1583447744}
   - component: {fileID: 1583447743}
-  - component: {fileID: 1583447742}
   m_Layer: 0
   m_Name: Speeder
   m_TagString: Speeder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!65 &1583447742
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583447741}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_IsActive: 1
 --- !u!114 &1583447743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,7 +1454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ad20966ad6bf547bd9615431a8a67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speederCount: 0
 --- !u!135 &1583447744
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1476,7 +1462,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583447741}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1947,7 +1933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1898315010381217308, guid: c40ae528bfcd3474e9ccefd80b95f998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1898315010381217308, guid: c40ae528bfcd3474e9ccefd80b95f998, type: 3}
       propertyPath: m_LocalPosition.y

@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void GetMoving()
     {
-        Vector3 directions = new Vector3(Input.GetAxis("Vertical") * speedMovement, rb.velocity.y, Input.GetAxis("Horizontal") * speedMovement);
+        Vector3 directions = new Vector3(Input.GetAxis("Vertical") * speedMovement, rb.velocity.y, -Input.GetAxis("Horizontal") * speedMovement);
         rb.velocity = directions;
 
         if (Input.GetButtonDown("Jump") && Grounded())

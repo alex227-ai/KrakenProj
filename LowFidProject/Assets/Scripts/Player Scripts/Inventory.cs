@@ -5,6 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] bool hasObject;
+    [SerializeField] public int MySpeeders = 0;
 
     // Start is called before the first frame update
     void Start()
