@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
+    [SerializeField] int health;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,16 @@ public class Damage : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void DealDamage(int damageAmount)
+    {
+        health -= damageAmount;
+
+        if(health < 0)
+        {
+            Destroy(gameObject);
+
+        }
     }
 }
