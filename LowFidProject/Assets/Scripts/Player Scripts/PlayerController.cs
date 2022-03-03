@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpSpeed = 0f;
 
     Rigidbody rb;
+    public Camera playerCamera; // try for inventory
     [SerializeField] LayerMask Ground;
     [SerializeField] Transform groundCheck;
 
