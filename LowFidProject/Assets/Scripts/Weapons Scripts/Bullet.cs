@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        print(collision.gameObject.name);
+        //print(collision.gameObject.name);
 
         HealthSystem damageGameObject = collision.gameObject.GetComponent<HealthSystem>();
 
@@ -24,14 +24,4 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    void DestroyBullet()
-    {
-        
-        {
-            print("Destroy bullet");
-            Destroy(gameObject);
-        }
-    }
-
 }

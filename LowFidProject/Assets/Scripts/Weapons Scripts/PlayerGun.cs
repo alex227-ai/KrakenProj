@@ -29,7 +29,5 @@ public class PlayerGun : MonoBehaviour
         Rigidbody bulletRb;
         bulletRb = Instantiate(bullet, transform.position + new Vector3 (xOffSet, 0, 0), transform.rotation);
         bulletRb.AddForce(transform.right * bSpeed, ForceMode.Impulse);
-            
-            //.velocity = new Vector3(1f, 0f, 0f) * bSpeed;
     }
 }
