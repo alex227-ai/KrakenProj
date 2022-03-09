@@ -1,18 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SceneMana : MonoBehaviour
+public class SceneManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string sceneToLoad = "Level1";
+
+    internal static void LoadScene(object p)
     {
-        
+        throw new NotImplementedException();
     }
 
-    // Update is called once per frame
-    void Update()
+    internal static object GetActiveScene()
     {
-        
+        throw new NotImplementedException();
     }
 }
