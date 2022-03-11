@@ -20,7 +20,6 @@ public class Score : MonoBehaviour
     {
         score += amountToIncrease;
 
-        //UnityEngine.Debug.Log($"Score is now: {score}");
 
         tScore.text = score.ToString();
 
