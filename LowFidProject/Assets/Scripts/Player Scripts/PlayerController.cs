@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] public float speedMovement = 0f;
+    [SerializeField] public float speedMovement = 5f;
     [SerializeField] float jumpSpeed = 0f;
 
     Rigidbody rb;
@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && Grounded())
         {
+            print("jumping");
             rb.velocity = new Vector3(rb.velocity.x, jumpSpeed, rb.velocity.z);
         }
 
