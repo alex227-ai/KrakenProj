@@ -114,6 +114,45 @@ public class GameUI : MonoBehaviour
 
     void CheckInputs()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (currentState == GameState.Playing)
+            {
+                CheckGameState(GameState.Paused);
+            }else if (currentState == GameState.Paused)
+            {
+                CheckGameState(GameState.Playing);
+            }
+        }
+    }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Level1");
+        CheckGameState(GameState.Playing);
+    }
+
+    public void PauseGame()
+    {
+        CheckGameState(GameState.Paused);
+    }
+
+    public void ResumeGame()
+    {
+        CheckGameState(GameState.Playing);
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+        CheckGameState(GameState.MainMenu);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
+
+
+
