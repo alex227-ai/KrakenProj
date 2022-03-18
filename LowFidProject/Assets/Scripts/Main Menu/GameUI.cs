@@ -57,7 +57,7 @@ public class GameUI : MonoBehaviour
 
     public void GameActive()
     {
-        mainMenuPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
         gameSettingsPanel.SetActive(false);
         gameCreditsPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
