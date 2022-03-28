@@ -2115,6 +2115,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2508178345655730186, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Text
+      value: Monster Escape
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345655730188, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Name
+      value: Game Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345655730189, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 213.5579
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345655730189, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.1264
+      objectReference: {fileID: 0}
     - target: {fileID: 2508178345675762959, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2148,6 +2164,26 @@ PrefabInstance:
     - target: {fileID: 2508178345966884709, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345996152232, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Text
+      value: Monster Escape
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345996152234, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Name
+      value: Game Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345996152234, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345996152235, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 212.2139
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345996152235, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6.4544
       objectReference: {fileID: 0}
     - target: {fileID: 2508178346056819056, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2223,6 +2259,38 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2508178346695803068, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Text
+      value: Monster Escape
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346695803070, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Name
+      value: Game Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346695803071, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 211.5706
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346695803071, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6.1327
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346704893206, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Text
+      value: Monster Escape
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346704893208, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Name
+      value: Game Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346704893209, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 210.4674
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346704893209, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.5812
+      objectReference: {fileID: 0}
     - target: {fileID: 2508178346704893209, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 106
@@ -2254,6 +2322,22 @@ PrefabInstance:
     - target: {fileID: 2508178346785929721, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346842881024, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 211.8984
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346842881024, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346842881025, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Text
+      value: Monster Escape
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178346842881027, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Name
+      value: Game Title
       objectReference: {fileID: 0}
     - target: {fileID: 2508178346908303311, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_Text
