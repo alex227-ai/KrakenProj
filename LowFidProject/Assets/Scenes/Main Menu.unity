@@ -390,7 +390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508178345153091036, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GameSettings
+      value: HowToPlay
       objectReference: {fileID: 0}
     - target: {fileID: 2508178345153091036, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

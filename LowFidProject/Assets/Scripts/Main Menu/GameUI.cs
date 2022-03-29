@@ -8,7 +8,8 @@ public class GameUI : MonoBehaviour
 {
     public enum GameState { MainMenu, Paused, Playing, GameOver};
     public GameState currentState;
-    public GameObject mainMenuPanel, gameSettingsPanel, gameCreditsPanel, pauseMenuPanel, gameOverPanel, titleText;
+    public GameObject mainMenuPanel, howToplayPanel, gameCreditsPanel, pauseMenuPanel, gameOverPanel, titleText;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -48,7 +49,7 @@ public class GameUI : MonoBehaviour
     public void MainMenuSetup()
     {
         mainMenuPanel.SetActive(true);
-        gameSettingsPanel.SetActive(false);
+        howToplayPanel.SetActive(false);
         gameCreditsPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
         gameOverPanel.SetActive(false);
@@ -58,7 +59,7 @@ public class GameUI : MonoBehaviour
     public void GameActive()
     {
         mainMenuPanel.SetActive(false);
-        gameSettingsPanel.SetActive(false);
+        howToplayPanel.SetActive(false);
         gameCreditsPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
         gameOverPanel.SetActive(false);
@@ -68,7 +69,7 @@ public class GameUI : MonoBehaviour
     public void GamePaused()
     {
         mainMenuPanel.SetActive(false);
-        gameSettingsPanel.SetActive(false); 
+        howToplayPanel.SetActive(false); 
         gameCreditsPanel.SetActive(false);
         pauseMenuPanel.SetActive(true);
         gameOverPanel.SetActive(false);
@@ -78,7 +79,7 @@ public class GameUI : MonoBehaviour
     public void GameOver()
     {
         mainMenuPanel.SetActive(false);
-        gameSettingsPanel.SetActive(false);
+        howToplayPanel.SetActive(false);
         gameCreditsPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
         gameOverPanel.SetActive(true);
@@ -88,17 +89,17 @@ public class GameUI : MonoBehaviour
     public void GameCredits()
     {
         mainMenuPanel.SetActive(false);
-        gameSettingsPanel.SetActive(false);
+        howToplayPanel.SetActive(false);
         gameCreditsPanel.SetActive(true);
         pauseMenuPanel.SetActive(false);
         gameOverPanel.SetActive(false);
         titleText.SetActive(true);
     }
 
-    public void GameSettings()
+    public void HowToPlay()
     {
         mainMenuPanel.SetActive(false);
-        gameSettingsPanel.SetActive(true);
+        howToplayPanel.SetActive(true);
         gameCreditsPanel.SetActive(false);
         pauseMenuPanel.SetActive(false);
         gameOverPanel.SetActive(false);

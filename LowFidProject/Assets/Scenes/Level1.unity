@@ -1927,7 +1927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2508178345153091036, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GameSettings
+      value: HowToPlay
       objectReference: {fileID: 0}
     - target: {fileID: 2508178345153091036, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2056,6 +2056,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2508178345611612415, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508178345611612415, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: titleText
       value: 
       objectReference: {fileID: 1776769004}
@@ -2067,6 +2071,10 @@ PrefabInstance:
       propertyPath: mainMenuPanel
       value: 
       objectReference: {fileID: 2098279833}
+    - target: {fileID: 2508178345611612415, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+      propertyPath: howToplayPanel
+      value: 
+      objectReference: {fileID: 863775459}
     - target: {fileID: 2508178345611612415, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
       propertyPath: pauseMenuPanel
       value: 
@@ -2403,8 +2411,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2508178345611612354, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b03b68a8aaffc554eb21a0be1a647304, type: 3}
 --- !u!4 &1328901011 stripped
 Transform:
